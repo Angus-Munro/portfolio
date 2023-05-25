@@ -9,9 +9,468 @@
 			integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
 			crossorigin="anonymous"
 		></script>
-		<script src="js/index.js"></script>
-		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
-		<title>Angus Munro</title>
+		<script defer src="js/index.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link rel="stylesheet" href="https://unpkg.com/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="styles/output.css" />
+		<title>Angus Munro - Home</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="body-wrapper">
+			<!-- || Header -->
+			<header class="header header--home hidden">
+				<h1 class="header__greeting">Greetings!</h1>
+				<p class="header__introduction">
+					I'm <span class="header__introduction__name">Angus Munro</span>, a
+					front-end web developer based in Sydney, Australia. I have a passion
+					for building web apps, interfaces and websites.
+				</p>
+				<p class="header__email-call-to-action">
+					Get in touch via email
+					<span
+						><img
+							class="arrow-icon arrow-icon--header"
+							src="img/icons/right-arrow.png"
+							alt=""
+					/></span>
+					<span class="header--home__email-link--span email-link--span"
+						><a href="mailto:angusmunro12@gmail.com">angusmunro12@gmail.com</a
+						><noscript>angusmunro12@gmail.com</noscript></span
+					>
+				</p>
+			</header>
+			<!-- || Main content -->
+			<main class="main main--home">
+				<!-- Background -->
+				<section class="section section--home section--home__background hidden">
+					<div class="section__header-wrapper">
+						<h2 class="subheader background__header">Background</h2>
+					</div>
+					<div class="section__content">
+						<p class="background__education">
+							Lorem ipsum dolor sit amet
+							<span class="description__text-emphasis"
+								>Macquarie University</span
+							>
+							consectetur adipisicing elit. Fugit omnis sapiente aut ipsum
+							harum.
+						</p>
+						<p class="background__work-experience">
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+							explicabo fuga, nesciunt facere,
+							<span class="description__text-emphasis"
+								>saepe incidunt repellat vel sequi</span
+							>
+							debitis architecto blanditiis, modi exercitationem placeat?
+							Repudiandae error assumenda vero atque quos.
+						</p>
+						<p class="background__personal">
+							Suscipit pariatur vero placeat officiis
+							<span class="description__text-emphasis"
+								>nam ea beatae minima laborum</span
+							>
+							soluta, ullam eveniet assumenda quia rem?
+						</p>
+						<p class="background__CV-text">
+							<a href="cv.html" class="global-link global-link--cv"
+								>View my CV
+								<span
+									><img
+										class="arrow-icon arrow-icon--background"
+										src="img/icons/right-arrow.png"
+										alt="" /></span
+							></a>
+						</p>
+					</div>
+				</section>
+				<!-- Skills -->
+				<section class="section section--home section--home__skills hidden">
+					<div class="section__header-wrapper">
+						<h2 class="subheader skills__header">Skills</h2>
+						<p class="skills__introduction">
+							Skills and technologies used in projects:
+						</p>
+					</div>
+					<div class="section__content section--home__skills-content">
+						<ul class="skills__list">
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/html5.png"
+									alt="HTML Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">HTML</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/css3.png"
+									alt="CSS Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">CSS</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/javascript.png"
+									alt="Javascript Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Javascript</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/vuejs.png"
+									alt="Vue.js Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Vue.js</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/jquery.png"
+									alt="JQuery Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">JQuery</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/git.png"
+									alt="Git Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Git</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/github.png"
+									alt="Github Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Github</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/firebase.png"
+									alt="Firebase Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Firebase</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/sass.png"
+									alt="SASS Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">SASS</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/command-line.png"
+									alt="Command Line Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Command Line</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/responsive-websites.png"
+									alt="Responsive Websites Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Responsive Websites</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/web-accessibility.png"
+									alt="Web Accessibility Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Web Accessibility</p>
+							</li>
+							<li class="skills__list-item">
+								<img
+									src="img/icons/technology-icons/figma.png"
+									alt="Figma Icon"
+									class="skills__list-icon"
+								/>
+								<p class="skills__list-subtitle">Figma</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Projects -->
+				<section class="section section--home section--home__projects hidden">
+					<div class="section__header-wrapper">
+						<h2 class="subheader projects__header">Projects</h2>
+					</div>
+					<div class="section__content">
+						<div class="project__card">
+							<div class="project__card__text-content-wrapper">
+								<a href="#">
+									<h3 class="project__card__title">
+										Project 1
+										<span
+											><img
+												class="arrow-icon arrow-icon--project-card"
+												src="img/icons/right-arrow.png"
+												alt=""
+										/></span>
+									</h3>
+								</a>
+								<ul class="tech-stack-list--home tech-stack-list">
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										HTML
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										CSS
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Javascript
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Vue.js
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Firebase
+									</li>
+								</ul>
+								<div
+									class="action-btn__div-wrapper project__card__btn-div-wrapper"
+								>
+									<button
+										id="project1-btn"
+										class="action-btn project__card__view-project-btn project1-btn"
+									>
+										View Project
+										<!-- <a href="project1.html">View Project</a> -->
+									</button>
+									<div
+										class="action-btn-border project__card__view-project-btn-border"
+									></div>
+								</div>
+								<p class="project__card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Obcaecati tempora soluta, iure neque deserunt blanditiis
+									doloremque.
+								</p>
+							</div>
+							<img
+								class="project__card__preview project__card__preview--home"
+								src="img/placeholder-image.png"
+								alt="Project Preview Image"
+							/>
+						</div>
+						<div class="project__card">
+							<div class="project__card__text-content-wrapper">
+								<a href="#">
+									<h3 class="project__card__title">
+										Project 1
+										<span
+											><img
+												class="arrow-icon arrow-icon--project-card"
+												src="img/icons/right-arrow.png"
+												alt=""
+										/></span>
+									</h3>
+								</a>
+								<ul class="tech-stack-list--home tech-stack-list">
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										HTML
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										CSS
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Javascript
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Vue.js
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Firebase
+									</li>
+								</ul>
+								<div
+									class="action-btn__div-wrapper project__card__btn-div-wrapper"
+								>
+									<button
+										id="project2-btn"
+										class="action-btn project__card__view-project-btn project1-btn"
+									>
+										View Project
+										<!-- <a href="project1.html">View Project</a> -->
+									</button>
+									<div
+										class="action-btn-border project__card__view-project-btn-border"
+									></div>
+								</div>
+								<p class="project__card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Obcaecati tempora soluta, iure neque deserunt blanditiis
+									doloremque.
+								</p>
+							</div>
+							<img
+								class="project__card__preview project__card__preview--home"
+								src="img/placeholder-image.png"
+								alt="Project Preview Image"
+							/>
+						</div>
+						<div class="project__card">
+							<div class="project__card__text-content-wrapper">
+								<a href="#">
+									<h3 class="project__card__title">
+										Project 1
+										<span
+											><img
+												class="arrow-icon arrow-icon--project-card"
+												src="img/icons/right-arrow.png"
+												alt=""
+										/></span>
+									</h3>
+								</a>
+								<ul class="tech-stack-list--home tech-stack-list">
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										HTML
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										CSS
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Javascript
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Vue.js
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Firebase
+									</li>
+								</ul>
+								<div
+									class="action-btn__div-wrapper project__card__btn-div-wrapper"
+								>
+									<button
+										id="project3-btn"
+										class="action-btn project__card__view-project-btn project1-btn"
+									>
+										View Project
+										<!-- <a href="project1.html">View Project</a> -->
+									</button>
+									<div
+										class="action-btn-border project__card__view-project-btn-border"
+									></div>
+								</div>
+								<p class="project__card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Obcaecati tempora soluta, iure neque deserunt blanditiis
+									doloremque.
+								</p>
+							</div>
+							<img
+								class="project__card__preview project__card__preview--home"
+								src="img/placeholder-image.png"
+								alt="Project Preview Image"
+							/>
+						</div>
+						<div class="project__card">
+							<div class="project__card__text-content-wrapper">
+								<a href="#">
+									<h3 class="project__card__title">
+										Project 1
+										<span
+											><img
+												class="arrow-icon arrow-icon--project-card"
+												src="img/icons/right-arrow.png"
+												alt=""
+										/></span>
+									</h3>
+								</a>
+								<ul class="tech-stack-list--home tech-stack-list">
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										HTML
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										CSS
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Javascript
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Vue.js
+									</li>
+									<li class="tech-stack-list__item tech-stack-list__item--home">
+										Firebase
+									</li>
+								</ul>
+								<div
+									class="action-btn__div-wrapper project__card__btn-div-wrapper"
+								>
+									<button
+										id="project4-btn"
+										class="action-btn project__card__view-project-btn project1-btn"
+									>
+										View Project
+										<!-- <a href="project1.html">View Project</a> -->
+									</button>
+									<div
+										class="action-btn-border project__card__view-project-btn-border"
+									></div>
+								</div>
+								<p class="project__card__description">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Obcaecati tempora soluta, iure neque deserunt blanditiis
+									doloremque.
+								</p>
+							</div>
+							<img
+								class="project__card__preview project__card__preview--home"
+								src="img/placeholder-image.png"
+								alt="Project Preview Image"
+							/>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- || Footer -->
+		<footer class="footer footer--home hidden">
+			<p class="footer__signature">
+				Created by <br />
+				Angus Munro, 2023
+			</p>
+			<ul class="footer__links">
+				<li class="footer__links__item">
+					<a
+						class="global-link global-link--footer"
+						href="https://www.linkedin.com/in/angus-munro-0a908a212/"
+						>LinkedIn</a
+					>
+				</li>
+				<li class="footer__links__item">
+					<a
+						class="global-link global-link--footer"
+						href="https://github.com/Angus-Munro"
+						>Github</a
+					>
+				</li>
+				<li class="footer__links__item">
+					<a class="global-link global-link--footer" href="credits.html"
+						>Credits</a
+					>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>

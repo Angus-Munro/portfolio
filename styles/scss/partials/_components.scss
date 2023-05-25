@@ -1,0 +1,206 @@
+@use "variables.scss";
+
+// || Nav
+.nav {
+	margin: 1rem 1rem 0;
+
+	@include for-medium-devices-up {
+		margin: 2rem 2.5rem 0;
+	}
+}
+
+// || Global Link
+.global-link {
+	position: relative;
+	padding-bottom: 0.6rem;
+}
+.global-link::after {
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 0;
+	position: absolute;
+	height: 3px;
+	transition: all 0.3s;
+}
+.global-link:hover::after {
+	width: 100%;
+}
+
+// Global link--cv
+.global-link--cv::after {
+	background-color: $color-text-body;
+}
+.global-link--cv:hover::after {
+	width: 110%;
+}
+
+// Global link--project-site
+.global-link--project-site {
+	font-weight: 500;
+	color: $color-text-accent--primary;
+}
+.global-link--project-site::after {
+	background: $color-text-accent--primary;
+}
+
+// Global link--footer
+.global-link--footer,
+.global-link--cv--header {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $color-text-accent--primary;
+}
+.global-link--footer::after,
+.global-link--cv--header::after {
+	background: $color-text-accent--primary;
+}
+
+// Global link credits list
+.global-link--credits__list-item {
+	color: $color-text-accent--primary;
+}
+.global-link--credits__list-item::after {
+	background: $color-text-accent--primary;
+}
+
+// || Email link main
+.email-link--span {
+	padding: 0 0.1rem 0.1rem;
+	border-bottom: 3px solid $color-text-accent--primary;
+	transition: 0.3s all;
+}
+.email-link--span:hover {
+	border-color: $color-general-accent--primary;
+}
+
+// || Action button
+.action-btn__div-wrapper {
+	position: relative;
+}
+.action-btn {
+	position: relative;
+	background-color: $color-text-accent--primary;
+	color: $color-background--primary;
+	font-family: $body-font-family;
+	font-weight: 500;
+	margin: 1rem 0;
+	padding: 0.8em;
+	border: none;
+	transform: translate(-0.5rem, -0.5rem);
+	transition: all 0.3s;
+	z-index: 2;
+}
+.action-btn > a {
+	user-select: none;
+}
+.action-btn:hover {
+	transform: none;
+}
+.action-btn-border {
+	position: absolute;
+	top: 1rem;
+	border: 2px solid;
+	// Fallback for jquery size adjustment
+	// height: 43.984px;
+	// width: 115.469px;
+}
+
+// || Icons
+// Skill List Icon
+.skills__list-icon {
+	height: 3.75rem;
+	width: 3.75rem;
+}
+
+// Arrow Icons
+.arrow-icon {
+	position: relative;
+}
+
+.arrow-icon--header {
+	height: 2rem;
+	width: 2rem;
+	left: 0.1rem;
+	top: 0.5rem;
+}
+
+.arrow-icon--background {
+	height: 2rem;
+	width: 2rem;
+	left: 1rem;
+	top: 0.65rem;
+}
+
+.arrow-icon--project-card {
+	height: 2.5rem;
+	width: 2.5rem;
+	left: 1.875rem;
+	top: 0.75rem;
+}
+
+// || Project Card
+.project__card {
+	display: flex;
+	flex-direction: column;
+	@include for-standard-up {
+		gap: 2.5rem;
+	}
+	@include for-standard-up {
+		flex-direction: row;
+		gap: 5rem;
+	}
+
+	.project__card__title {
+		font-weight: bold;
+	}
+
+	.project__card__preview {
+		width: 80%;
+		max-width: 24rem;
+		border: 2px solid;
+		align-self: center;
+	}
+}
+
+// Project Card margin except last
+.project__card:not(:last-child) {
+	margin-bottom: 3rem;
+}
+
+.footer {
+	margin: 4rem 1rem 1rem;
+	@include for-medium-devices-up {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	@include for-standard-up {
+		margin: 4rem 3rem 2rem;
+	}
+
+	.footer__links {
+		display: flex;
+		justify-content: space-around;
+		gap: 1rem;
+	}
+}
+
+// || Tech stack list
+.tech-stack-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.tech-stack-list__item {
+	border: 2px solid;
+	border-radius: 4px;
+	color: $color-text-accent--primary;
+	font-weight: 500;
+}
+
+.tech-stack-list--project {
+	gap: 0.15rem;
+}
+.tech-stack-list__item--project {
+	padding: 0.15rem;
+}

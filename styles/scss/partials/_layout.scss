@@ -1,0 +1,75 @@
+@use "mixins.scss";
+
+// || Body wrapper spacing
+.body-wrapper {
+	position: relative;
+	margin: 0 1rem;
+	max-width: 1120px;
+	@include for-medium-devices-up {
+		margin: 2.5rem 2.5rem 0;
+	}
+	@include for-small-desktop-up {
+		margin: 5rem 5rem 0;
+	}
+	@include for-standard-up {
+		margin: 10rem 10rem 0;
+	}
+	@include for-large-desktop-up {
+		margin: 15rem auto 0;
+	}
+}
+
+// || Header and section hidden/show properties (for on scroll animation)
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-50%);
+	transition: all 0.5s;
+}
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+}
+
+// || Section spacing
+// | General
+// Below is temporary until styling is sorted for CV page
+.section--home {
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	@include for-small-desktop-up {
+		margin-top: 12.5rem;
+	}
+	@include for-large-desktop-up {
+		flex-direction: row;
+		gap: 4rem;
+	}
+	.section__header-wrapper {
+		@include for-large-desktop-up {
+			max-width: 20ch;
+		}
+	}
+}
+
+// | Specific
+// Main
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@include for-medium-devices-up {
+		margin: 0 2.5rem;
+	}
+	@include for-tablets-up {
+		margin: 0 5rem;
+	}
+}

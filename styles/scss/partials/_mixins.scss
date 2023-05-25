@@ -1,0 +1,26 @@
+// || Breakpoints
+@mixin for-medium-devices-up {
+	@media (min-width: 480px) {
+		@content;
+	}
+}
+@mixin for-tablets-up {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+@mixin for-small-desktop-up {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+@mixin for-standard-up {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin for-large-desktop-up {
+	@media (min-width: 1440px) {
+		@content;
+	}
+}

@@ -1,0 +1,88 @@
+// ||| General
+// Description text emphasis
+.description__text-emphasis {
+	font-weight: bold;
+}
+
+// Footer
+.footer {
+	.footer__signature {
+		font-weight: 500;
+	}
+}
+
+// ||| Home
+// || Header
+.header--home {
+	.header__greeting {
+		font-size: 2.5rem;
+	}
+	.header__introduction {
+		font-size: 1.5rem;
+		letter-spacing: 0.05rem;
+		line-height: 1.5;
+		max-width: 30ch;
+		@include for-medium-devices-up {
+			font-size: 1.75rem;
+		}
+	}
+	.header__introduction__name {
+		font-weight: 500;
+		color: $color-text-accent--primary;
+	}
+
+	.header__email-call-to-action {
+		font-size: 1.25rem;
+	}
+	.header__email-link--span {
+		padding: 0 0.1rem 0.25rem;
+		border-bottom: 3px solid $color-text-accent--primary;
+	}
+}
+
+// || Main
+// General
+.subheader {
+	font-weight: bold;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	color: $color-text-accent--primary;
+	letter-spacing: 0.1rem;
+}
+// Background
+.section--home__background {
+	.background__CV-text {
+		font-weight: bold;
+	}
+}
+
+// Skills
+.section--home__skills {
+	.skills__introduction {
+		font-weight: 500;
+		font-style: italic;
+	}
+}
+
+// ||| CV
+// || Main
+.cv__title-info__name {
+	font-weight: bold;
+}
+
+.section--cv__header {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: underline 2px;
+	text-underline-offset: 4px;
+}
+
+.work-experience-entry__company-name-span {
+	font-weight: 500;
+}
+.work-experience-entry__employment--date {
+	font-weight: 500;
+}
+.work-experience-entry__employment--role {
+	font-weight: bold;
+}
